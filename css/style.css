@@ -103,5 +103,47 @@ p {
 /* !  Feature categories  End */
 
 /* !  Feature Product  Start */
-
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.col-4 img {
+  width: 100%;
+}
+.title {
+  position: relative;
+  text-align: center;
+  line-height: 60px;
+  color: #555;
+  margin: 0 auto 80px;
+}
+.title::after {
+  content: "";
+  background: #ff532b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+.col-4 p {
+  font-size: 0.8rem;
+}
+.rating .fa-solid,
+.rating .fa-regular {
+  color: #ff532b;
+}
+.col-4:hover {
+  transform: translateY(-5px);
+}
 /* !  Feature Product  End */
