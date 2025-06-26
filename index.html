@@ -31,7 +31,7 @@
           <img src="./images/logo.png" alt="logo" width="125px">
         </div>
         <nav>
-          <ul>
+          <ul id="MenuItems">
             <li><a href="">Home</a></li>
             <li><a href="">Product</a></li>
             <li><a href="">About</a></li>
@@ -40,6 +40,7 @@
           </ul>
         </nav>
         <img src="./images/cart.png" alt="" class="cart_img">
+        <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
       </div>
       <!-- ! Navbar End -->
 
@@ -226,9 +227,7 @@
       </div>
     </div>
   </div>
-
   <!-- ! Feature Product End -->
-
 
   <!-- ! Offer Start -->
   <div class="offer">
@@ -301,7 +300,6 @@
   </div>
   <!-- ! Testinomial End -->
 
-
   <!-- ! Brands Start -->
   <div class="brand">
     <div class="small-container">
@@ -324,8 +322,8 @@
       </div>
     </div>
   </div>
-
   <!-- ! Brands End -->
+
   <!-- ! Footer Start -->
   <div class="footer">
     <div class="container">
@@ -371,7 +369,20 @@
   </div>
   <!-- ! Footer End -->
 
+  <!-- ! Script -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = '0px';
 
+    function menutoggle() {
+      if (MenuItems.style.maxHeight === '0px') {
+        MenuItems.style.maxHeight = '200px';
+      }
+      else {
+        MenuItems.style.maxHeight = '0px';
+      }
+    }
+  </script>
 </body>
 
 </html>
