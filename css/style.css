@@ -147,3 +147,24 @@ h4 {
   transform: translateY(-5px);
 }
 /* !  Feature Product  End */
+
+/* ! Offer Start */
+.offer {
+  margin-top: 80px;
+  background: radial-gradient(#fff, #ffd6d6);
+  padding: 30px 0;
+}
+.col-2 .offer-img {
+  padding: 50px;
+}
+small {
+  color: #555;
+}
+/* ! Offer End */
+
+/*  ! Testinomial Start */
+
+
+/*  ! Testinomial End*/
+
+
