@@ -329,10 +329,10 @@ select {
 select:focus {
   outline: none;
 }
-.page-btn{
-  margin:0 auto 80px;
+.page-btn {
+  margin: 0 auto 80px;
 }
-.page-btn span{
+.page-btn span {
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -350,8 +350,55 @@ select:focus {
   color: inherit;
   cursor: default;
 } */
-.page-btn span:hover{
+.page-btn span:hover {
   background-color: #ff532b;
   color: #fff;
 }
 /* ! All Products End*/
+
+/* ! Single Product page */
+.single-product {
+  margin-top: 70px;
+}
+.single-product .col-2 img {
+  padding: 0px;
+}
+.single-product .col-2 {
+  padding: 20px;
+}
+.single-product h4 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+  border: 1px solid #ff532b;
+  border-radius: 7px;
+}
+input:focus {
+  outline: none;
+}
+.single-product .fa-solid {
+  color: #ff532b;
+  margin-left: 10px;
+}
+.small-img-row{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col
+{
+  flex-basis: 24%;
+  cursor: pointer;
+}

@@ -45,7 +45,24 @@
     <div class="small_container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="./images/gallery-1.jpg" alt="" width="100%">
+                <img src="./images/gallery-1.jpg" alt="" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="./images/gallery-1.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./images/gallery-2.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./images/gallery-3.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./images/gallery-4.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="col-2">
                 <p>Home / T-Shirt</p>
@@ -61,7 +78,8 @@
                     </select>
                     <input type="number" value="1">
                     <a href="#" class="btn">Add to Cart</a>
-                    <h3>Product Details</h3>
+                    <h3>Product Details <i class="fa-solid fa-indent"></i></h3>
+                    <br>
                     <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-shirt. Team it with a pair
                         of shorts for your morning workout or a denims for an evening out with the guys.
                     </p>
@@ -186,6 +204,19 @@
                 MenuItems.style.maxHeight = '0px';
             }
         }
+    </script>
+
+    <!-- ! js for product gallery -->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        for (let i = 0; i < SmallImg.length; i++) {
+            SmallImg[i].onclick = function () {
+                ProductImg.src = SmallImg[i].src;
+            }
+        }
+
     </script>
 </body>
 
