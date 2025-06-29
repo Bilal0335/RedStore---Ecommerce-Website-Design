@@ -4,20 +4,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RedStore | Ecommerce Website Design</title>
+
+  <title>RedStore - Stylish Sportswear & Fitness Fashion Online</title>
+  <meta name="description"
+    content="Shop premium sportswear, running shoes, and fitness accessories at RedStore. Affordable prices, top brands, and exclusive deals. Free delivery & easy returns.">
+  <meta name="keywords"
+    content="sportswear, fitness clothing, gym wear, running shoes, workout clothes, RedStore, eCommerce, buy online, men's fashion, women's fashion">
+  <meta name="author" content="BilalCode">
+
+  <meta property="og:title" content="RedStore - Shop Premium Sportswear Online">
+  <meta property="og:description"
+    content="Explore top fitness apparel, gym accessories, and trending footwear. Trusted by thousands.">
+  <meta property="og:image" content="https://bilalecommerce.vercel.app/images/og-banner.jpg">
+  <meta property="og:url" content="https://bilalecommerce.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ff523b">
+
   <link rel="icon" type="image/x-icon" href="./images/logo.png" />
   <link rel="stylesheet" href="/css/style.css">
-  <!-- Google Font -->
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Store",
+    "name": "RedStore",
+    "image": "https://bilalecommerce.vercel.app/images/logo.png",
+    "url": "https://bilalecommerce.vercel.app",
+    "description": "RedStore is an online store for stylish sportswear, gym gear, and fitness accessories.",
+    "brand": {
+      "@type": "Brand",
+      "name": "RedStore"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 
 <body>
   <!-- ! Header start -->
@@ -49,10 +81,10 @@
       <!-- ! Hero section Start -->
       <div class="row">
         <div class="col-2">
-          <h1>Give Your Workout <br /> New Style!</h1>
-          <p>Success isn't always about greatness. It's about consistency. Consistent <br>hard work gains success.
-            Greatness will come.</p>
-          <a href="" class="btn">Explore Now &#8594</a>
+          <h1>Shop Trendy Sportswear & Fitness Gear</h1>
+          <p>RedStore offers a wide range of premium fitness clothing and athletic accessories at unbeatable prices.
+            Perfect for gym lovers and active lifestyles.</p>
+          <a href="products.html" class="btn">Browse Collection &#8594;</a>
         </div>
         <div class="col-2">
           <img src="/images/image1.png" alt="">
@@ -67,26 +99,36 @@
   <!-- ! Feature categories Start -->
   <div class="categories">
     <div class="small_container">
+      <h2 class="title">Shop by Category</h2>
       <div class="row">
-        <div class="col-3"><img src="./images/category-1.jpg" alt=""></div>
-        <div class="col-3"><img src="./images/category-2.jpg" alt=""></div>
-        <div class="col-3"><img src="./images/category-3.jpg" alt=""></div>
+        <div class="col-3">
+          <img src="./images/category-1.jpg" alt="Men's Sportswear Collection" loading="lazy">
+        </div>
+        <div class="col-3">
+          <img src="./images/category-2.jpg" alt="Women's Fitness Apparel" loading="lazy">
+        </div>
+        <div class="col-3">
+          <img src="./images/category-3.jpg" alt="Gym Accessories and Gear" loading="lazy">
+        </div>
       </div>
     </div>
   </div>
+
   <!-- ! Feature categories End -->
 
   <!-- ! Feature Product Start -->
   <div class="small_container">
-    <h2 class="title">Feature Products</h2>
+    <h2 class="title">Featured Products</h2>
     <div class="row">
+
       <div class="col-4">
         <a href="product_detail.html">
-          <img src="./images/product-1.jpg" alt="Maroon T-Shirt" />
+          <img src="./images/product-1.jpg" alt="Maroon Graphic T-Shirt" loading="lazy" />
         </a>
         <a href="product_detail.html">
           <h4>Maroon Graphic T-Shirt</h4>
         </a>
+        <p>Soft cotton, slim-fit athletic tee for daily workouts.</p>
         <div class="rating">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -96,9 +138,15 @@
         </div>
         <p>&dollar;29.99</p>
       </div>
+
       <div class="col-4">
-        <img src="./images/product-2.jpg" alt="Black Sports Shoes" />
-        <h4>Black Running Shoes</h4>
+        <a href="product_detail.html">
+          <img src="./images/product-2.jpg" alt="Black Running Shoes" loading="lazy" />
+        </a>
+        <a href="product_detail.html">
+          <h4>Black Running Shoes</h4>
+        </a>
+        <p>Lightweight and breathable with cushioned support for runners.</p>
         <div class="rating">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -106,131 +154,45 @@
           <i class="fa-solid fa-star"></i>
           <i class="fa-regular fa-star"></i>
         </div>
-        <p>&dollar;75.00</p>
+        <p>&dollar;59.99</p>
       </div>
+
       <div class="col-4">
-        <img src="./images/product-3.jpg" alt="Grey Track Pants" />
-        <h4>Men's Grey Track Pants</h4>
+        <a href="product_detail.html">
+          <img src="./images/product-3.jpg" alt="Grey Joggers" loading="lazy" />
+        </a>
+        <a href="product_detail.html">
+          <h4>Grey Joggers</h4>
+        </a>
+        <p>Comfortable stretch joggers perfect for workouts or casual wear.</p>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>&dollar;39.99</p>
+      </div>
+
+      <div class="col-4">
+        <a href="product_detail.html">
+          <img src="./images/product-4.jpg" alt="Blue Activewear Set" loading="lazy" />
+        </a>
+        <a href="product_detail.html">
+          <h4>Blue Activewear Set</h4>
+        </a>
+        <p>Matching top and leggings for high-performance training sessions.</p>
         <div class="rating">
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star-half-stroke"></i>
           <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&dollar;45.50</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-4.jpg" alt="Navy Polo Shirt" />
-        <h4>Navy Blue Polo Shirt</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
-        <p>&dollar;35.99</p>
-      </div>
-    </div>
-    <h2 class="title">Latest Product</h2>
-    <div class="row">
-      <div class="col-4">
-        <img src="./images/product-5.jpg" alt="Light Gray Casual Shoes" />
-        <h4>Light Gray Casual Shoes</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&dollar;55.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-6.jpg" alt="Black Running Shoes" />
-        <h4>Black Running Shoes</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&dollar;75.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-7.jpg" alt="HRX Socks (3 Pair)" />
-        <h4>HRX Athletic Socks</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&dollar;14.99</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-8.jpg" alt="Black Dial Watch" />
-        <h4>Classic Black Watch</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
-        <p>&dollar;110.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-9.jpg" alt="Round Dial Black Watch" />
-        <h4>Sporty Black Watch</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
-        <p>&dollar;95.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-10.jpg" alt="Black & Red Running Shoes" />
-        <h4>Black & Red Running Shoes</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
-        <p>&dollar;89.99</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-11.jpg" alt="Grey Slip-On Shoes" />
-        <h4>Grey Slip-On Shoes</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
-        <p>&dollar;65.00</p>
-      </div>
-      <div class="col-4">
-        <img src="./images/product-12.jpg" alt="Black Joggers" />
-        <h4>Men's Black Joggers</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i>
         </div>
         <p>&dollar;49.99</p>
       </div>
+
     </div>
   </div>
   <!-- ! Feature Product End -->
